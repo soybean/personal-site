@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Molengo&family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<div class="container">
+
+    <div class="row navbar-top">
+        <div class="col-md-2 navitem index">
+            <div class="row">
+                <a class="unlink" href="index.html">home</a>
+            </div>
+            <div class="row home circs">
+                <div class="navbar-circ index light-g i1"></div>
+                <div class="navbar-circ index g i2"></div>
+                <div class="navbar-circ index tq i3"></div>
+
+            </div>
+        </div>
+        <div class="col-md-2 navitem abt">
+            <div class="row"><a class="unlink" href="about.html">about</a></div>
+            <div class="row about circs">
+                <div class="navbar-circ abt light-g i1"></div>
+                <div class="navbar-circ abt g i2"></div>
+                <div class="navbar-circ abt tq i3"></div>
+
+            </div>
+        </div>
+        <div class="col-md-2 navitem prj" id="active">
+            <div class="row"><a class="unlink" href="projects.html">projects</a></div>
+            <div class="row projects circs">
+                <div class="navbar-circ prj light-g i1"></div>
+                <div class="navbar-circ prj g i2"></div>
+                <div class="navbar-circ prj tq i3"></div>
+            </div>
+        </div>
+        <div class="col-md-2 navitem rsm">
+            <div class="row">
+                <a class="unlink" href="resume.html">resume</a>
+            </div>
+            <div class="row resume circs">
+                <div class="navbar-circ rsm light-g i1"></div>
+                <div class="navbar-circ rsm g i2"></div>
+                <div class="navbar-circ rsm tq i3"></div>
+
+            </div>
+        </div>
+        <div class="col-md-2 navitem ori">
+            <div class="row"><a class="unlink" href="origami.html">origami</a></div>
+            <div class="row origami circs">
+                <div class="navbar-circ ori light-g i1"></div>
+                <div class="navbar-circ ori g i2"></div>
+                <div class="navbar-circ ori tq i3"></div>
+
+            </div>
+        </div>
+        <div class="col-md-2 navitem con">
+            <div class="row"><a class="unlink" href="contact.html">contact</a></div>
+            <div class="row contact circs">
+                <div class="navbar-circ con light-g i1"></div>
+                <div class="navbar-circ con g i2"></div>
+                <div class="navbar-circ con tq i3"></div>
+
+            </div>
+        </div>
+    </div>
+  
+  <div class="left-title">projects</div>
+  <div class='row'>
+    <div class='col-md-12'>
+        <ul>
+            <div class="list-item">
+                <li>
+                    <div class="med-circ light-g"></div>
+                    <div class="project-title">bawk, a versatile text-processing language</div>
+                    <div class="project-built grey">built with OCaml, C, & LLVM</div>
+                    <div class="project-link grey"><a class="unlink" href="github.com/soybean/bawk">github.com/soybean/bawk</a></div>
+                </li>
+            </div>
+            <div class="list-item">
+                <li>
+                    <div class="med-circ g"></div>
+                    <div class="project-title">how much does the MTA suck?</div>
+                    <div class="project-built grey">built with d3 & python</div>
+                    <div class="project-link grey"><a class="unlink" href="melaniesaw.com/d3mta">melaniesaw.com/d3mta</a></div>
+                </li>
+            </div>
+            <div class="list-item">
+                <li>
+                    <div class="med-circ tq"></div>
+                    <div class="project-title">50 states of birds: an interactive birdwatching tool</div>
+                    <div class="project-built grey">built with flask & javascript</div>
+                    <div class="project-link grey"><a class="unlink" href="melaniesaw.com/birdmap">melaniesaw.com/birdmap</a></div>
+                </li>
+            </div>
+            <div class="list-item">
+                <li>
+                    <div class="med-circ db"></div>
+                    <div class="project-title">columbia outdoors club site</div>
+                    <div class="project-built grey">built with react</div>
+                    <div class="project-link grey"><a class="unlink" href="cuoutdoors.github.io">cuoutdoors.github.io</a></div>
+                </li>
+            </div>
+            <div class="list-item">
+                <li>
+                    <div class="med-circ prp"></div>
+                    <div class="project-title">devfest 2019</div>
+                    <div class="project-built grey">built with html, css, & javascript</div>
+                    <div class="project-link grey"><a class="unlink" href="2019.devfe.st">2019.devfe.st</a></div>
+                </li>
+            </div>
+        </ul>
+        <div class="empty-space"></div>
+
+ 
+
+  </div>
+  </div>
+</div>
+<script>
+    d3.selectAll("#active>.circs>.navbar-circ").style("opacity", 0.7).style("margin-top", "-6px");
+    d3.selectAll(".navitem:not(#active)").on("mouseover", function () {
+        var myclass = this.classList[2];
+
+        d3.selectAll("." + myclass + ".navbar-circ").transition().style("opacity", 0.7).style("margin-top", "-6px").on("end", function () {
+            d3.selectAll("." + myclass + ".navbar-circ.i1").transition().style("margin-left", "-7px");
+            d3.selectAll("." + myclass + ".navbar-circ.i3").transition().style("margin-left", "7px");
+            d3.selectAll("." + myclass + ".navbar-circ.i2").transition().style("margin-top", "0px");
+        })
+    })
+    d3.selectAll(".navitem:not(#active)").on("mouseout", function () {
+        var myclass = this.classList[2];
+        d3.selectAll(":not(#active)>.circs>.navbar-circ").transition().style("margin-left", "0px").style("margin-top", "-6px").on("end", function () {
+            d3.selectAll(":not(#active)>.circs>.navbar-circ").transition().style("margin-top", "-20px").style("opacity", 0.0).on("end", function () {
+            })
+        })
+        d3.selectAll("#active>.circs>.navbar-circ").style("opacity", 0.7).style("margin-top", "-6px");
+    });
+
+</script>
+</html>

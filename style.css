@@ -1,0 +1,285 @@
+.title-text {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    text-align: center;
+    margin-top: 300px;
+    z-index:5;
+    position:relative;
+    pointer-events: none;
+}
+
+body {
+    font-family: 'Molengo', sans-serif;
+    font-size: 22px;
+}
+
+.center {
+    text-align: center;
+}
+
+.title-subtitle {
+    text-align:center;
+    font-size: 34px;
+
+}
+
+.title-circles {
+    margin-top: -180px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dot {
+  height: 228px;
+  width: 228px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.list-dot {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+}
+.small-circ {
+    margin-left:-8px;
+    position:absolute;
+    height: 40px;
+    width:40px;
+    border-radius:50%;
+    display: inline-block;
+    margin-top:6px;
+    z-index: -8;
+}
+
+.med-circ {
+    margin-left: -8px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: -8;
+    margin-top: -10px;
+}
+
+.light-g {
+    background-color: #57C600;
+    opacity: 0.69;
+}
+.g {
+    background-color: #00D06C;
+    opacity: 0.81;
+}
+.tq {
+    background-color: #00D0AB;
+    opacity: 0.67;
+}
+.db {
+    background-color: #00ABD0;
+    opacity: 0.67;
+}
+
+.prp {
+    background-color: #0071F6;
+    opacity: 0.67;
+}
+
+.one {
+    left: 96px;
+}
+.two {
+    left: 32px;
+}
+.three {
+    right: 32px;
+}
+.four {
+    right: 96px;
+}
+
+.list {
+    margin-left: 30px;
+    line-height: 1.5cm;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+li.navitem {
+  display: inline;
+  margin-right: 50px;
+  font-size: 20px;
+}
+.navitem {
+    font-size: 20px;
+}
+
+.top-navbar {
+    margin-top:30px;
+    text-align: center;
+}
+
+.highlight-lg{
+    font-weight: 900;
+    color: #57C600;
+    display: inline-block;
+}
+
+.highlight-g{
+    font-weight: 900;
+    color: #00D06C;
+    display: inline-block;
+}
+.highlight-tq{
+    font-weight: 900;
+    color: #00D0AB;
+    display: inline-block;
+}
+
+.highlight-db{
+    font-weight: 900;
+    color: #00ABD0;
+    display: inline-block;
+}
+.highlight-prp {
+    font-weight: 900;
+    color: #0071F6;
+    display: inline-block;
+}
+.inline {
+    display:inline-block;
+}
+a.unlink {
+    color: inherit;
+}
+a.unlink:hover {
+  color: inherit;
+  text-decoration: none;
+
+}
+a.unlink.active {
+  border-bottom: 4px solid #57C600;
+ }
+
+.page-title {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 100px;
+}
+
+.left-title {
+    font-family: "Nunito", sans-serif;
+    font-size: 60px;
+    margin-top: 100px;
+}
+
+svg {
+    width: 100%;
+    height: 300px;;
+}
+.project-title {
+    font-size: 36px;
+    margin-left: 35px;
+}
+.project-built {
+    font-size: 24px;
+    margin-top: -10px;
+    margin-left: 80px;
+}
+.project-link {
+    font-size: 18px;
+    margin-top: -10px;
+    margin-left: 80px;
+}
+.grey {
+    color: #878787;
+}
+.list-item {
+    margin-top: 50px;
+}
+.origami-cat {
+    font-size: 45px;
+    display:inline-block;
+}
+.empty-space {
+    height: 100px;
+
+}
+.origami-description {
+    display:inline-block;
+    text-align: right;
+}
+.img-contain {
+    padding: 40px;
+}
+.caption {
+    font-size: 14px;
+}
+
+.lg-circ {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: -8;
+    margin-right:10px;
+    margin-left:10px;
+    margin-top: 20px;
+}
+.fab{
+    margin-top:15px;
+}
+
+.navbar-circ {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    opacity: 0.0;
+    position:absolute;
+    z-index: -8;
+    margin-top: -20px;
+}
+.i1 {
+
+}
+.i2 {
+
+}
+.i3 {
+}
+.navbar-top {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.home {
+    margin-left: 1px;
+}
+
+.about {
+    margin-left: 3px;
+}
+
+.projects {
+    margin-left: 12px;
+}
+
+.resume {
+    margin-left: 10px;
+}
+.origami {
+    margin-left: 12px;
+}
+.contact {
+    margin-left: 8px;
+}
